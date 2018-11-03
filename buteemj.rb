@@ -17,7 +17,7 @@ class Buteemj < Formula
     #                      "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
     #system "make", "install" # if this fails, try separate make/make install steps
-	  bin.install "."
+	  bin.install "*"
 	#  system "install"
   end
 
