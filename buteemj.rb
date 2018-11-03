@@ -18,6 +18,7 @@ class Buteemj < Formula
     # system "cmake", ".", *std_cmake_args
     # system "make", "install" # if this fails, try separate make/make install steps
 	bin.install "buteemj-macos"
+	prefix.install Dir["*"]
 	#  system "install"
   end
 
