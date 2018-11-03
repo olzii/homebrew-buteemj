@@ -18,8 +18,19 @@ class Buteemj < Formula
     # system "cmake", ".", *std_cmake_args
     # system "make", "install" # if this fails, try separate make/make install steps
 	#bin.install "buteemj-macos"
-	bin.install Dir["*"]
+	#bin.install Dir["*"]
 	#prefix.install "buteemj-macos"
+
+	  bin.install "binding.node"
+	  bin.install "config.json"
+	  bin.install "ffi_bindings.node"
+
+	  bin.install "iconv.node"
+	  bin.install "node_sqlite3.node"
+	  bin.install "screenshot.node"
+	  bin.install "snapshot.dat"
+	  bin.install "buteemj-macos"
+
 	#  system "install"
   end
 
