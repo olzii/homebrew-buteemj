@@ -4,8 +4,8 @@
 class Buteemj < Formula
   desc "buteemj app"
   homepage ""
-  url "https://github.com/olzii/buteemj/archive/v1.0.1.tar.gz"
-  sha256 "e974b05b8c7a87340c45d91a84ee83254359461010d62c4c45822fd27723577c"
+  url "https://github.com/olzii/buteemj/archive/v1.0.2.tar.gz"
+  sha256 "9fbb1191d2c087f1f225174d4c145e047c127059ed8d5d2f85562429807dca88"
   # depends_on "cmake" => :build
 
   def install
@@ -29,6 +29,7 @@ class Buteemj < Formula
 	  bin.install "node_sqlite3.node"
 	  bin.install "screenshot.node"
 	  bin.install "snapshot.dat"
+	  bin.install "main"
 	  bin.install "buteemj-macos"
 
 	#  system "install"
