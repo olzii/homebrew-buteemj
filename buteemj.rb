@@ -11,12 +11,13 @@ class Buteemj < Formula
   def install
     	# ENV.deparallelize  # if your formula fails when building in parallel
     	# Remove unrecognized options if warned by configure
-    #system "./configure", "--disable-debug",
-    #                      "--disable-dependency-tracking",
-    #                      "--disable-silent-rules",
-    #                      "--prefix=#{prefix}"
+    system "./configure", "--disable-debug",
+                          "--disable-dependency-tracking",
+                          "--disable-silent-rules",
+                          "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
     # system "make", "install" # if this fails, try separate make/make install steps
+	system "install"
 	#bin.install "buteemj-macos"
 	#bin.install Dir["*"]
 	#prefix.install "buteemj-macos"
