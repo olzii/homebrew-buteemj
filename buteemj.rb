@@ -11,14 +11,14 @@ class Buteemj < Formula
   def install
     	# ENV.deparallelize  # if your formula fails when building in parallel
     	# Remove unrecognized options if warned by configure
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
+    #system "./configure", "--disable-debug",
+    #                      "--disable-dependency-tracking",
+    #                      "--disable-silent-rules",
+    #                      "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
     # system "make", "install" # if this fails, try separate make/make install steps
 	#bin.install "buteemj-macos"
-	bin.install Dir["*"]
+	#bin.install Dir["*"]
 	#prefix.install "buteemj-macos"
 
 	  bin.install "binding.node"
@@ -45,7 +45,7 @@ class Buteemj < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    # system "false"
-	system "#{bin}/buteemj-macos", "--version"
+    system "false"
+	# system "#{bin}/buteemj-macos", "--version"
   end
 end
