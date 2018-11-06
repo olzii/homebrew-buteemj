@@ -3,7 +3,7 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Buteemj < Formula
   desc "buteemj app"
-  homepage ""
+  homepage "http://www.starsoft.mn"
   url "https://github.com/olzii/buteemj/archive/v1.0.2.tar.gz"
   sha256 "9fbb1191d2c087f1f225174d4c145e047c127059ed8d5d2f85562429807dca88"
   # depends_on "cmake" => :build
@@ -18,7 +18,7 @@ class Buteemj < Formula
     # system "cmake", ".", *std_cmake_args
     # system "make", "install" # if this fails, try separate make/make install steps
 	#bin.install "buteemj-macos"
-	#bin.install Dir["*"]
+	bin.install Dir["*"]
 	#prefix.install "buteemj-macos"
 
 	  bin.install "binding.node"
