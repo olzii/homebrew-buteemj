@@ -4,20 +4,20 @@
 class Buteemj < Formula
   desc "buteemj app"
   homepage "http://www.starsoft.mn"
-  url "https://github.com/olzii/buteemj/archive/v1.0.2.tar.gz"
-  sha256 "9fbb1191d2c087f1f225174d4c145e047c127059ed8d5d2f85562429807dca88"
+  url "https://github.com/olzii/buteemj/archive/v1.0.3.tar.gz"
+  sha256 "9f8ba1c06ce2c5bcd173a36a552340b82e65df1cd768c1d10fc8aa2d2fc6228f"
   # depends_on "cmake" => :build
 
   def install
     	# ENV.deparallelize  # if your formula fails when building in parallel
     	# Remove unrecognized options if warned by configure
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
+    #system "./configure", "--disable-debug",
+    #                      "--disable-dependency-tracking",
+    #                      "--disable-silent-rules",
+    #                      "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
     # system "make", "install" # if this fails, try separate make/make install steps
-	system "install"
+	# system "install"
 	#bin.install "buteemj-macos"
 	#bin.install Dir["*"]
 	#prefix.install "buteemj-macos"
