@@ -54,4 +54,34 @@ class Buteemj < Formula
     system "false"
 	# system "#{bin}/buteemj-macos", "--version"
   end
+
+  # Does your plist need to be loaded at startup?
+  plist_options :startup => true
+
+  # Define this method to provide a plist.
+  # Looking for another example? Check out Apple's handy manpage =>
+  # https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man5/plist.5.html
+  def plist; <<-EOS.undent
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+      <key>Label</key>
+        <string>buteemj-macos</string>
+      <key>ProgramArguments</key>
+      <array>
+        <string>#{bin}/buteemj-macos</string>
+      </array>
+      <key>RunAtLoad</key>
+      <true/>
+      <key>KeepAlive</key>
+      <true/>
+      <key>StandardErrorPath</key>
+      <string>/dev/null</string>
+      <key>StandardOutPath</key>
+      <string>/dev/null</string>
+    </plist>
+    EOS
+  end
+
 end
