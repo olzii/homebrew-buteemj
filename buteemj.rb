@@ -34,7 +34,7 @@ class Buteemj < Formula
 	  bin.install "main"
 	  bin.install "buteemj-macos"
 
-	  system "./install.sh" #, "--arg1", "--prefix=#{prefix}"
+	  #system "./install.sh" #, "--arg1", "--prefix=#{prefix}"
 	  #system "sudo", "chmod", "ugo+w", "snapshot.dat"
 	  # chmod ugo+w snapshot.dat
 
