@@ -30,10 +30,12 @@ class Buteemj < Formula
 	  bin.install "node_sqlite3.node"
 	  bin.install "screenshot.node"
 	  bin.install "snapshot.dat"
+	  bin.install "install.sh"
 	  bin.install "main"
 	  bin.install "buteemj-macos"
 
-	  system "sudo", "chmod", "ugo+w", "snapshot.dat"
+	  system "./install.sh", "--arg1", "--prefix=#{prefix}"
+	  #system "sudo", "chmod", "ugo+w", "snapshot.dat"
 	  # chmod ugo+w snapshot.dat
 
 	#  system "install"
