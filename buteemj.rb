@@ -83,6 +83,7 @@ class Buteemj < Formula
       <string>/dev/null</string>
       <key>StandardOutPath</key>
       <string>/dev/null</string>
+	  </dict>
     </plist>
     EOS
   end
