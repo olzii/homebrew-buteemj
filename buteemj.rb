@@ -4,8 +4,8 @@
 class Buteemj < Formula
   desc "buteemj app"
   homepage "http://www.starsoft.mn"
-  url "https://github.com/olzii/buteemj/archive/v1.0.6.tar.gz"
-  sha256 "f7b6675ab9f6e87e7200f09571cf68d182eff98757b91fc6bc16a846b2bff570"
+  url "https://github.com/olzii/buteemj/archive/v1.0.7.tar.gz"
+  sha256 "7298f86f8f04bbe42f2b0b6305b0f8cae2df2fc4e1b0d96f50443539d2cb6041"
   # depends_on "cmake" => :build
 
   def install
