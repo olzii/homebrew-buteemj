@@ -61,7 +61,7 @@ class Buteemj < Formula
   # Define this method to provide a plist.
   # Looking for another example? Check out Apple's handy manpage =>
   # https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man5/plist.5.html
-  def plist; <<-EOS.undent
+  def plist; <<-EOS
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
