@@ -80,9 +80,11 @@ class Buteemj < Formula
       <key>KeepAlive</key>
       <true/>
       <key>StandardErrorPath</key>
-      <string>/dev/null</string>
+      <string>#{bin}/error.txt</string>
       <key>StandardOutPath</key>
-      <string>/dev/null</string>
+      <string>#{bin}/log.txt</string>
+	  <key>WorkingDirectory</key>
+      <string>#{bin}</string>
 	  </dict>
     </plist>
     EOS
