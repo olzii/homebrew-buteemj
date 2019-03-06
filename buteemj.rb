@@ -23,7 +23,7 @@ class Buteemj < Formula
 	#prefix.install "buteemj-macos"
 
 	  # If your formula's build system is not thread safe:
-      # ENV.deparallelize
+      ENV.deparallelize
 
 	  bin.install "binding.node"
 	  bin.install "config.json"
