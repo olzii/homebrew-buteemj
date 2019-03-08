@@ -76,11 +76,14 @@ class Buteemj < Formula
         <string>#{bin}/buteemj-macos</string>
       </array>
       <key>RunAtLoad</key>
-      <true/>
+      <false/>
       <key>KeepAlive</key>
       <false/>
       <key>AbandonProcessGroup</key>
       <true/>
+	  <key>ProcessType</key>
+      <string>Background</string>
+      <key>Nice</key> <integer>-5</integer>
       <key>StandardErrorPath</key>
       <string>#{bin}/error.txt</string>
       <key>StandardOutPath</key>
