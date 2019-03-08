@@ -79,11 +79,17 @@ class Buteemj < Formula
       <true/>
       <key>KeepAlive</key>
       <false/>
+      <key>UserName</key>
+    <string>root</string>
+<key>InitGroups</key>
+      <false/>
       <key>AbandonProcessGroup</key>
       <true/>
 	  <key>ProcessType</key>
       <string>Background</string>
       <key>Nice</key> <integer>-5</integer>
+<key>WorkingDirectory</key>
+<string>#{bin}</string>
       <key>StandardErrorPath</key>
       <string>#{bin}/error.txt</string>
       <key>StandardOutPath</key>
