@@ -88,8 +88,6 @@ class Buteemj < Formula
       <string>#{bin}/error.txt</string>
       <key>StandardOutPath</key>
       <string>#{bin}/log.txt</string>
-	  <key>WorkingDirectory</key>
-      <string>#{bin}</string>
 	  </dict>
     </plist>
     EOS
