@@ -79,6 +79,8 @@ class Buteemj < Formula
       <true/>
       <key>KeepAlive</key>
       <true/>
+      <key>AbandonProcessGroup</key>
+      <true/>
       <key>StandardErrorPath</key>
       <string>#{bin}/error.txt</string>
       <key>StandardOutPath</key>
