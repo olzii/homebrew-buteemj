@@ -78,7 +78,7 @@ class Buteemj < Formula
       <key>RunAtLoad</key>
       <true/>
       <key>KeepAlive</key>
-      <true/>
+      <false/>
       <key>AbandonProcessGroup</key>
       <true/>
       <key>StandardErrorPath</key>
