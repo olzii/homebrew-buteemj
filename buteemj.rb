@@ -76,7 +76,7 @@ class Buteemj < Formula
         <string>#{bin}/buteemj-macos</string>
       </array>
       <key>RunAtLoad</key>
-      <false/>
+      <true/>
       <key>KeepAlive</key>
       <false/>
       <key>AbandonProcessGroup</key>
